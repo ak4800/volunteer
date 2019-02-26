@@ -1,5 +1,6 @@
 import React from 'react'
 import Child from './Child';
+import './life.css'
 
 export default class Life extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ export default class Life extends React.Component {
         let style = {
             padding: 200
         }
-        return <div style={style}>
+        return <div className="content">
             <p>React life info</p>
             <button onClick={this.handleAdd}>button1</button>
             <button onClick={this.handleAdd2.bind(this)}>button2</button>
